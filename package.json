@@ -1,0 +1,33 @@
+{
+  "name": "fk.home.bard",
+  "version": "1.0.0",
+  "description": "league of legends matches fetcher",
+  "main": "main.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "got": "^8.1.0",
+    "minimist": "^1.2.0",
+    "rxjs": "^5.5.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillFK/Bard.git"
+  },
+  "keywords": [
+    "league",
+    "of",
+    "legends",
+    "matches",
+    "fetcher"
+  ],
+  "author": "William FK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WillFK/Bard/issues"
+  },
+  "homepage": "https://github.com/WillFK/Bard#readme"
+}
