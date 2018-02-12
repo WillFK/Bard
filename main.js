@@ -20,7 +20,7 @@
         .subscribe((match) => {
                 console.log(JSON.stringify(match, null, 4))
             }, (err) => {
-                console.err(err);
+                console.error(err);
             }, () => {
                 process.exit() // workaround
             })
