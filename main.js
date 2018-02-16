@@ -1,6 +1,6 @@
 (function() {
     const cheerio = require('cheerio')
-    const minimalist = require('minimist')
+    const minimist = require('minimist')
     const got = require('got')
     const Rx = require('rxjs/Rx')
     const DEFAULT_LIMIT = 1
@@ -75,7 +75,7 @@
     }
 
     function processArguments() {
-        var args = minimalist(process.argv.slice(2))
+        var args = minimist(process.argv.slice(2))
         limit = args['l'] || args['limit'] || DEFAULT_LIMIT
         region = args['r'] || args['region']
         type = args['t'] || args['type']
