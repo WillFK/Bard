@@ -1,12 +1,12 @@
 (function() {
-    var DEFAULT_LIMIT = 10
-    var limit = null
-    var region = null
-    var type = null
     const cheerio = require('cheerio')
     const minimalist = require('minimist')
     const got = require('got')
     const Rx = require('rxjs/Rx')
+    const DEFAULT_LIMIT = 1
+    var limit = null
+    var region = null
+    var type = null
 
     processArguments()
 
@@ -50,7 +50,7 @@
                   })
                 observable.complete()
             }).catch(error => {
-                observable.error(error)
+                //ignoring errors for now observable.error(error)
             });
         })
     }
@@ -69,7 +69,7 @@
                 observable.next({ type: type, region: region, summoners: summoners })
                 observable.complete()
             }).catch(error => {
-                observable.error(error)
+                //ignoring errors for now observable.error(error)
             });
         })
     }

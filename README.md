@@ -10,7 +10,7 @@ node main.js -l 3 -r euw -t 3v3
 The script accepts three different arguments. All of then are optional.
 
 ### limit (--limit or -l)
-The maximum number of results you expect. the default value is 10.
+The maximum number of results you expect. the default value is 1.
 
 ### region (--region or -r)
 Fetch data from this region only. This check is not case sensitive and you don't need to match the whole region key.
